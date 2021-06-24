@@ -56,7 +56,7 @@ void hex(void* buffer, size_t len) {
     for(size_t i = 0; i < len; i++) {
         printf("%02x", ((char*)buffer)[i] & 0xff);
         if(i % 4 == 3)
-            printf(" ");
+            printf("");
     }
 }
 
